@@ -29,8 +29,8 @@ class EventsReader(object):
         """Takes a list of events (lines) and produces states
 
         :param lines: Events iterable
-        :param ts_start: Event window start
-        :param ts_end: Event window end
+        :param ts_start: Event window start (Unix TS)
+        :param ts_end: Event window end (Unix TS)
         """
 
         self.lines = lines

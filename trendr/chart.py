@@ -52,7 +52,7 @@ class TrendChart(object):
             "</text>'",
             "<style>",
             ".desc {font-size: 40%; font-family: monospace;}",
-            ".test:hover .bar {fill: blue; opacity: 0.6;}",
+            ".barwrap:hover .bar {fill: blue; opacity: 0.6;}",
             "</style>"
         ]
 
@@ -73,7 +73,7 @@ class TrendChart(object):
                 tooltip_head = '[ STATUS: ERR ]'
 
             yield ''.join([
-                "<g class='test'>",
+                "<g class='barwrap'>",
                 "<rect class='bar' x='{0}' y='0' width='{1}' height='50' fill='{2}'>"
                 .format(pos_x, width, color),
                 "<title>{0}\n\nStart: {1}\nEnd: {2}</title>"
