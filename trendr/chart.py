@@ -22,18 +22,16 @@ class TrendChart(object):
     def _width_ratio(self):
         """Returns width ratio used to scale the chart dynamically
 
-        Calculates total bar width, including padding along with start-end delta in seconds.
-
-        :returns: (chart_width - bars_width) / delta_secs
+        :returns: (chart_width - bars_width) / window_size
         """
 
-        # Chart period in seconds
-        delta_secs = float(self._end.ts - self._start.ts)
+        # Chart window size in seconds
+        window_size = float(self._end.ts - self._start.ts)
 
-        # Bars min-width
+        # Total bars width
         bars_width = len(self.states) * self.padding
 
-        return float(self.width - bars_width) / delta_secs
+        return float(self.width - bars_width) / window_size
 
     @property
     def head(self):
@@ -63,6 +61,7 @@ class TrendChart(object):
         pos_x = 0
 
         for status, start, end in self.states:
+            # Create dynamic bar width
             width = (end.ts - start.ts) * self._width_ratio + self.padding
 
             if status == 'True':
