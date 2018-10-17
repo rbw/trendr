@@ -1,5 +1,5 @@
 # trendr
-Pure-python SVG chart generator built using the standard library.
+Chart generator built using the Python standard library.
 
 Usage
 ---
@@ -27,7 +27,7 @@ Works with python 2 and 3. Use with **pypy** for performance.
 
 Output
 ---
-SVG charts are generated with on-hover effects and a tooltip (open in separate tab to test). 
+Charts are generated with on-hover highlight and tooltip, open in separate tab to check out.
 ![Example Chart](./examples/output.svg)
 
 
