@@ -33,7 +33,7 @@ def events_to_svg(events_file, *times):
         return tc.__str__(), len(tc.states)
 
 
-parser = argparse.ArgumentParser(description='SVG trend graph generator')
+parser = argparse.ArgumentParser(description='SVG chart generator')
 parser.add_argument('--input', type=str, help='input file containing events', required=True)
 parser.add_argument('--output', type=str, help='SVG output file', required=True)
 parser.add_argument('--start', type=int, help='Period start (Unix Timestamp)', required=True)
