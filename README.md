@@ -22,7 +22,14 @@ $ python -m trendr --input examples/testdata_large.txt --output test.svg --start
 
 Compatibility
 ---
-Works with python 2 and 3. Use with `pypy` for performance. 
+Works with python 2 and 3. Use with **pypy** for performance. 
+
+
+Output
+---
+SVG files are generated with on-hover effects and a tooltip (open in separate tab to test). 
+![Example Graph](./examples/output.svg)
+
 
 
 Author
