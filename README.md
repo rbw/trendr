@@ -17,7 +17,7 @@ optional arguments:
 
 **Example**
 ```
-$ pypy -m trendr --input examples/testdata_large.txt --output test.svg --start 1428997804 --end 1429602499
+$ python -m trendr --input examples/testdata_large.txt --output test.svg --start 1428997804 --end 1429602499
 ```
 
 Compatibility
