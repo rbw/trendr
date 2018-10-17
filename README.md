@@ -27,8 +27,8 @@ Works with python 2 and 3. Use with **pypy** for performance.
 
 Output
 ---
-Charts are generated with on-hover highlight and tooltip, open in separate tab to check out.
-![Example Chart](./examples/output.svg)
+Charts are generated with on-hover highlight and tooltip. Example:
+![Example Chart](https://raw.githubusercontent.com/rbw/trendr/master/examples/output.svg?sanitize=true)
 
 
 
