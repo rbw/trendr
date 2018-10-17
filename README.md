@@ -27,4 +27,4 @@ Works with python 2 and 3. Use with `pypy` for performance.
 
 Author
 ---
-Robert Wikman <rbw@vault13.org>
+Robert Wikman \<rbw@vault13.org\>
